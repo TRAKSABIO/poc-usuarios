@@ -30,8 +30,7 @@ app.use('/Usuarios/v1', usuariosRoutes, planoRoutes);
 //app.use('/Usuarios/v1', planoRoutes);
 
 // configuracoes do banco de dados
-//mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
-    mongoose.connect("mongodb+srv://admin:admin@cluster0.0seem.mongodb.net/POCUSUARIOS?retryWrites=true&w=majority", {
+mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
     useUnifiedTopology: true,
     useFindAndModify: true,
     useNewUrlParser: true,
